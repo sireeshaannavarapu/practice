@@ -2,3 +2,7 @@
 .mybox{
   border: 3px solid;
 }
+button.shopping:disabled{
+  background-color: black;
+  color:white;
+}
