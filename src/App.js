@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import Project from './Project';
 
 function App() {
   return (
     <div className='mybox'>
-      <h1>welcome</h1>
+      <Project></Project>
     </div>
   );
 }
