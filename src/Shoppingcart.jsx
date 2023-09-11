@@ -13,8 +13,7 @@ function Shoppingcart(){
       });
 
     },[]);
-   
-    
+
     function addtocart(i){
        var temp=[...products]
        temp[i].IsProductInCart=true;
