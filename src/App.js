@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Outlet,Link} from 'react-router-dom';
+import NavBar from './NavBar';
+import Meals from "./Meals"
 
-function App() {
+
+function App(){
   return (
-    <div className='mybox'>
-      <h1>welcome</h1>
+    <div>
+      <NavBar></NavBar>
+      <Link to="/Meals">Meal</Link>
+      <Outlet></Outlet>
     </div>
-  );
+  )
 }
-
 export default App;
