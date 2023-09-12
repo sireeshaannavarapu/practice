@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import{ Provider} from "react-redux";
+import Counter from "./Counter";
+import Todolist from "./Todolist";
+import store from "./store/store";
+function App (){
   return (
-    <div className='mybox'>
-      <h1>welcome</h1>
-    </div>
+    <Provider store={store}>
+      <div className="mybox">
+        <Counter></Counter>
+        <Todolist></Todolist>
+      </div>
+    </Provider>
+    
   );
 }
-
 export default App;
